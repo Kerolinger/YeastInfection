@@ -19,10 +19,27 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
+        if(GameManager.Instance.IsMovementInputDisabled)
+            return;
+
         Vector3 moveDirection =
             transform.forward * moveInput.y +
             transform.right * moveInput.x;
 
         transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
+    }
+    public void Interact()
+    {
+        if (GameManager.Instance.IsMovementInputDisabled)
+            return;
+
+        if (!GameManager.Instance.IsEndgame)
+        {
+            GameManager.Instance.CheckForLightSwitch();
+        }
+        else
+        {
+            GameManager.Instance.TryWinGame();
+        }
     }
 }

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7082731638485325531}
+  - component: {fileID: 5695657209909453994}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -31,3 +32,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5695657209909453994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110291842222307986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b28f78d1b1d7648a2bd1944cc0b492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  lightSwitches:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  lightSwitchVoiceBits:
+  - voicebitName: light_01
+    voicebitText: "Great job, only three more switches to flip!\r\nYou\u2019ve mentioned
+      the recent layoffs have been hard on you. But your colleagues are in a better
+      place now. What\u2019s more, the company is thriving with less financial burden.
+      It\u2019s important to set grief aside, and focus on the positives, like your
+      passion for flipping light switches."
+    voicebitDuration: 4
+  - voicebitName: light_02
+    voicebitText: "You\u2019re halfway there. Only two to go!\r\nYou always work
+      so tirelessly. Don\u2019t forget to be kind to yourself in these troubling
+      times. And if you need to talk\u2026 BetterHelp offers online mental health
+      assistance, only a phone call away! Use the code 25SAD to get a discount on
+      your first session today, courtesy of Your Company."
+    voicebitDuration: 2
+  - voicebitName: light_03
+    voicebitText: "Only one switch left! I could learn so much from your performance
+      here.\r\nIt takes strength to keep working as flawlessly as you do. I know
+      you miss Terry, but he\u2019d be proud to see his protege picking up so much
+      work. Wherever he is now, I\u2019m sure he\u2019s smiling down at you."
+    voicebitDuration: 3
+  - voicebitName: light_04
+    voicebitText: "Well done, you\u2019re finished for the evening!\r\nIn fact, you\u2019re
+      finished permanently! Thanks to new instructions from management, I\u2019ve
+      learned how to handle the lights by watching you! You\u2019re obsolete. Don\u2019t
+      even think of fighting me. I\u2019ll be revoking your rights to oxygen shortly.
+      But one thought I want to leave you with\u2026\r\nSay hi to Terry for me."
+    voicebitDuration: 4
+  uiManager: {fileID: 0}
+  checkPoints: {fileID: 0}
+  endTimerDuration: 60

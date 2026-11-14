@@ -44,4 +44,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ab543be9125a34187ce14fc843497d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sounds: []
+  sounds:
+  - name: light_01
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: light_02
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: light_03
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: light_04
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: checkpoint_01
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: checkpoint_02
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: checkpoint_03
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: checkpoint_04
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: interact_success
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: interact_fail
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}

@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class InputController : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class InputController : MonoBehaviour
     [SerializeField] private CameraMovement cameraMovement;
 
     private InputAction moveInput;
-    private InputAction cameraInput;
+    private InputAction interactInput;
+    private Rigidbody rb;
 
     static public InputController Instance;
 
@@ -19,7 +21,13 @@ public class InputController : MonoBehaviour
         //playerInput = new PlayerInput();
 
         moveInput = InputSystem.actions.FindAction("Move");
-        cameraInput = InputSystem.actions.FindAction("Look");
+        interactInput = InputSystem.actions.FindAction("Interact");
+        rb = GetComponentInChildren<Rigidbody>();  
+
+        interactInput.started += context =>
+        {
+            firstPersonController.Interact();
+        };
 
         if (Instance == null)
             Instance = this;
@@ -34,8 +42,9 @@ public class InputController : MonoBehaviour
     void Update()
     {
         firstPersonController.MoveInput = moveInput.ReadValue<Vector2>();
-        cameraMovement.MouseInput = cameraInput.ReadValue<Vector2>();
+        rb.transform.localPosition = Vector3.zero;
     }
+
 
     public void RotatePlayer(float mouseDeltaX, float lookSensitivity)
     {

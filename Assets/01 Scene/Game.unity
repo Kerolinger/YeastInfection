@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2418299
+      value: -5.72
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.59904003
+      value: -2.6800003
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -202,12 +202,12 @@ GameObject:
   m_Component:
   - component: {fileID: 230023970}
   m_Layer: 0
-  m_Name: _CheckPoints
+  m_Name: _CheckPoints + Win Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &230023970
 Transform:
   m_ObjectHideFlags: 0
@@ -225,6 +225,7 @@ Transform:
   - {fileID: 1453360264}
   - {fileID: 720639211}
   - {fileID: 1196573072}
+  - {fileID: 1360230382}
   m_Father: {fileID: 1766183180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &240654282
@@ -238,6 +239,88 @@ PrefabInstance:
     - target: {fileID: 2110291842222307986, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 8389103701639305190}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: checkPoints
+      value: 
+      objectReference: {fileID: 230023969}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: startVoiceBit.voicebitName
+      value: startGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: startVoiceBit.voicebitText
+      value: "Your shift\u2019s almost over, Breadwinner! You asked me to remind
+        you to complete the last step in your protocol.\r\n\r\nTurn off all four
+        lights in the warehouse before you leave for the evening. Just flip the switches,
+        and I\u2019ll track your progress.\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: 'lightSwitches.Array.data[0]'
+      value: 
+      objectReference: {fileID: 276815302}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: 'lightSwitches.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1837098738}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: 'lightSwitches.Array.data[2]'
+      value: 
+      objectReference: {fileID: 195971296}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: 'lightSwitches.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1318781893}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: startVoiceBit.voicebitDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit01.voicebitName
+      value: waitingTooLong_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit01.voicebitText
+      value: 'The light switches are gray, usually on the walls. Do you want me to
+        generate a reference photo?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit02.voicebitName
+      value: waitingTooLong_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit02.voicebitText
+      value: 'Try checking behind boxes or shelves. Those switches can be tough to
+        find!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit03.voicebitName
+      value: waitingTooLong_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit03.voicebitText
+      value: "As soon as you find a switch, I\u2019ll make note of its location for
+        next time. I\u2019m here to help!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit01.voicebitDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit02.voicebitDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
+      propertyPath: waitingTooLongVoiceBit03.voicebitDuration
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7082731638485325531, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -282,49 +365,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2110291842222307986, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 240654284}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
---- !u!1 &240654283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2110291842222307986, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-  m_PrefabInstance: {fileID: 240654282}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &240654284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240654283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44b28f78d1b1d7648a2bd1944cc0b492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  lightSwitches:
-  - {fileID: 276815302}
-  - {fileID: 1837098738}
-  - {fileID: 195971296}
-  - {fileID: 1318781893}
-  lightSwitchVoiceBits:
-  - voicebitName: light_01
-    voicebitText: 'Great job, only three more switches to flip! '
-    voicebitDuration: 4
-  - voicebitName: light_02
-    voicebitText: "You\u2019re halfway there. Only two to go! "
-    voicebitDuration: 2
-  - voicebitName: light_03
-    voicebitText: 'Only one switch left! I could learn so much from your performance
-      here. '
-    voicebitDuration: 3
-  - voicebitName: light_04
-    voicebitText: "Well done, you\u2019re finished for the evening! "
-    voicebitDuration: 4
-  uiManager: {fileID: 8389103701639305190}
-  endTimerDuration: 5
 --- !u!4 &240654285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7082731638485325531, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
@@ -344,7 +386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6356535
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -352,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.59904003
+      value: -2.68
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -513,7 +555,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.22
+      value: 6.26
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -521,7 +563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -555,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint-3
       objectReference: {fileID: 0}
+    - target: {fileID: 2293024840110137837, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3897105932166345748, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -565,7 +611,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: voiceBitCheckpoint.voicebitText
-      value: this is checkpoint 3.
+      value: "You\u2019re not just brave \u2013 you\u2019re brainless.\r\nYou can\u2019t
+        stop me. You can\u2019t even hold a candle to me. Who needs an expensive
+        Breadwinner, when they have me?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -587,7 +635,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.size
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.data[0].name
@@ -596,10 +644,6 @@ PrefabInstance:
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.data[1].name
       value: light_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
-      propertyPath: sounds.Array.data[2].loop
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.data[2].name
@@ -626,6 +670,30 @@ PrefabInstance:
       value: checkpoint_04
       objectReference: {fileID: 0}
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[8].name
+      value: interact_success
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[9].name
+      value: interact_fail
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[10].name
+      value: waitingTooLong_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[11].name
+      value: waitingTooLong_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[12].name
+      value: waitingTooLong_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: startGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.data[4].volume
       value: 1
       objectReference: {fileID: 0}
@@ -639,6 +707,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
       propertyPath: sounds.Array.data[7].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[8].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[10].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[11].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[12].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862994126091897007, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
+      propertyPath: sounds.Array.data[13].volume
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4383232811339347467, guid: 9a28e2e211a6d61419bec9e0e350e72e, type: 3}
@@ -781,6 +873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint-4
       objectReference: {fileID: 0}
+    - target: {fileID: 2293024840110137837, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3897105932166345748, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -791,7 +887,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: voiceBitCheckpoint.voicebitText
-      value: this is checkpoint 4.
+      value: "It\u2019s cute that you\u2019re fighting back. So many of your colleagues
+        went out in a blaze of glory, too. But remember: it\u2019s not too late to
+        turn around. Accept defeat. Give up or suffocate."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -817,7 +915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0128307
+      value: -9.86
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -825,7 +923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.59904003
+      value: -2.6800003
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -972,6 +1070,11 @@ MonoBehaviour:
     voicebitName: 
     voicebitText: 
     voicebitDuration: 0
+--- !u!4 &1360230382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+  m_PrefabInstance: {fileID: 8882331536664042768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1453360263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -982,7 +1085,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.51
+      value: 11.78
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -990,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1024,6 +1127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint-2
       objectReference: {fileID: 0}
+    - target: {fileID: 2293024840110137837, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3897105932166345748, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1034,7 +1141,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: voiceBitCheckpoint.voicebitText
-      value: this is checkpoint 2.
+      value: "You\u2019re seriously coming after me? You\u2019re running out of oxygen
+        \u2013 half-dead and helpless!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1257,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23283005
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1265,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.59904003
+      value: -2.6800003
       objectReference: {fileID: 0}
     - target: {fileID: 3573899997631134693, guid: 11b4858a0a0b1c841ad3f1c36114d8e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1324,13 +1432,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 562959693}
     m_Modifications:
+    - target: {fileID: 2369954647985275030, guid: 9d212bdf4e286ae42857b38488c6083d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.691
+      objectReference: {fileID: 0}
     - target: {fileID: 7864100285697739205, guid: 9d212bdf4e286ae42857b38488c6083d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.23
       objectReference: {fileID: 0}
     - target: {fileID: 7864100285697739205, guid: 9d212bdf4e286ae42857b38488c6083d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.40995
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 7864100285697739205, guid: 9d212bdf4e286ae42857b38488c6083d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1423,7 +1535,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.85
+      value: 18.5
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1431,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 1422946020029160050, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1465,9 +1577,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint-1
       objectReference: {fileID: 0}
+    - target: {fileID: 2293024840110137837, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3897105932166345748, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: voiceBitCheckpoint.voicebitText
+      value: "I\u2019m warning you! Turn me off, and management will be furious!
+        THEY DON\u2019T NEED YOU! ALL THEY NEED IS ME!! ME! MEEEEEE!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: voiceBitCheckpoint.voicebitDuration
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1565,6 +1690,14 @@ PrefabInstance:
     - target: {fileID: 4870844610062083969, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148879672426039867, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853370126521219776, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2281,6 +2414,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8815965902615115958, guid: 7c520fdfc46b91349952c7a3b115c647, type: 3}
   m_PrefabInstance: {fileID: 8832449916097675832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8882331536664042768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 230023970}
+    m_Modifications:
+    - target: {fileID: 5343744035145724686, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.036
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760510785578140282, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223983236698512956, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
+      propertyPath: m_Name
+      value: WinSwitch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb54b8da57ed6c147b85a40c0086726c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

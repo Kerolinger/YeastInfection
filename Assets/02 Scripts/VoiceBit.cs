@@ -4,7 +4,7 @@ using UnityEngine;
 public class VoiceBit
 {
     [SerializeField] private string voicebitName;
-    [SerializeField] private string voicebitText;
+    [SerializeField][TextArea(3, 20)] private string voicebitText;
     [SerializeField] private float voicebitDuration;
 
     public string VoicebitName { get => voicebitName; set => voicebitName = value; }

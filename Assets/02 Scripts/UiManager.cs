@@ -14,6 +14,8 @@ public class UiManager : MonoBehaviour
 
     private float remainingTime;
 
+    private Coroutine textCoroutine;
+
     private void Start()
     {
         m_winStateMenu.SetActive(false);
@@ -34,26 +36,41 @@ public class UiManager : MonoBehaviour
 
     public void TriggerWinState()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        StopAllCoroutines();
         m_winStateMenu.SetActive(true);
+
+        GameManager.Instance.IsCameraInputDisabled = true;
+        GameManager.Instance.IsMovementInputDisabled = true;
     }
 
     public void TriggerFailState()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         m_failStateMenu.SetActive(true);
+
+        GameManager.Instance.IsCameraInputDisabled = true;
+        GameManager.Instance.IsMovementInputDisabled = true;
     }
 
     public void ActivateCaption(VoiceBit voiceBit)
     {
+        if(textCoroutine!=null)
+            StopCoroutine(textCoroutine);
+
         m_TextBox.SetActive(true);
         m_voiceCaptionText.text = voiceBit.VoicebitText;
 
-        StartCoroutine(DeactivateCaptionText(voiceBit.VoicebitDuration));
+        textCoroutine = StartCoroutine(DeactivateCaptionText(voiceBit.VoicebitDuration));
     }
 
     private IEnumerator DeactivateCaptionText(float captionDuration)
     {
         yield return new WaitForSeconds(captionDuration + 0.5f);
         m_TextBox.SetActive(false);
+        textCoroutine = null;
     }
 
     private IEnumerator TimerGoingDown()
@@ -65,5 +82,8 @@ public class UiManager : MonoBehaviour
             remainingTime -= 1;
         }
 
+        remainingTime = 0;
+        m_timerText.text = remainingTime.ToString();
+        TriggerFailState();
     }
 }
