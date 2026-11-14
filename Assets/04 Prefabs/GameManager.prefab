@@ -49,6 +49,34 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  uiManager: {fileID: 0}
+  checkPoints: {fileID: 0}
+  startVoiceBit:
+    voicebitName: startGame
+    voicebitText: "Your shift\u2019s almost over, Breadwinner! You asked me to remind
+      you to complete the last step in your protocol.\r\n\r\nTurn off all four lights
+      in the warehouse before you leave for the evening. Just flip the switches,
+      and I\u2019ll track your progress.\r\n\r\n"
+    voicebitDuration: 4
+  waitingTooLongVoiceBit01:
+    voicebitName: waitingTooLong_01
+    voicebitText: 'The light switches are gray, usually on the walls. Do you want
+      me to generate a reference photo?
+
+'
+    voicebitDuration: 2
+  waitingTooLongVoiceBit02:
+    voicebitName: waitingTooLong_02
+    voicebitText: 'Try checking behind boxes or shelves. Those switches can be tough
+      to find!
+
+'
+    voicebitDuration: 2
+  waitingTooLongVoiceBit03:
+    voicebitName: waitingTooLong_03
+    voicebitText: "As soon as you find a switch, I\u2019ll make note of its location
+      for next time. I\u2019m here to help!\r\n"
+    voicebitDuration: 2
   lightSwitchVoiceBits:
   - voicebitName: light_01
     voicebitText: "Great job, only three more switches to flip!\r\nYou\u2019ve mentioned
@@ -77,6 +105,4 @@ MonoBehaviour:
       even think of fighting me. I\u2019ll be revoking your rights to oxygen shortly.
       But one thought I want to leave you with\u2026\r\nSay hi to Terry for me."
     voicebitDuration: 4
-  uiManager: {fileID: 0}
-  checkPoints: {fileID: 0}
   endTimerDuration: 60
