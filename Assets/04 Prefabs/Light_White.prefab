@@ -44,13 +44,13 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 9.73
+  m_Intensity: 3
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -87,7 +87,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 9933
+  m_ColorTemperature: 14295
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -170,6 +170,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 7001685152023033379}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c9b76c4bd356de34287d21964a154f90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9b76c4bd356de34287d21964a154f90, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -212,7 +216,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c9b76c4bd356de34287d21964a154f90, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ef485acfbfffa6146b8c856e2519eba8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3093b7800bbfc0745b086ec5e161f719, type: 2}
     - target: {fileID: 919132149155446097, guid: c9b76c4bd356de34287d21964a154f90, type: 3}
       propertyPath: m_Name
       value: Light_Cable
@@ -344,7 +348,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 107bec7a3b6236f4bb3369d8a01b3c8f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ef485acfbfffa6146b8c856e2519eba8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3093b7800bbfc0745b086ec5e161f719, type: 2}
     - target: {fileID: 919132149155446097, guid: 107bec7a3b6236f4bb3369d8a01b3c8f, type: 3}
       propertyPath: m_Name
       value: Light_Middle Part
