@@ -28,7 +28,7 @@ public class InputController : MonoBehaviour
             Destroy(Instance);
             Instance = this;
         }
-            
+
     }
 
     void Update()

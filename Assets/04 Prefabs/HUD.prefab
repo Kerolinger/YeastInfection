@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 8558772208365745239}
   - component: {fileID: 4244317559189285482}
   - component: {fileID: 7892289176084486235}
-  - component: {fileID: 5261705041733225195}
   m_Layer: 5
   m_Name: IMG_VoiceCaptionBackdrop
   m_TagString: Untagged
@@ -188,18 +187,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5261705041733225195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4374662211328483849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbeec3b743f4ae429110409b8471762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UiManager
 --- !u!1 &4870844610062083969
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +199,7 @@ GameObject:
   - component: {fileID: 2918823593992001638}
   - component: {fileID: 3276747369704520728}
   - component: {fileID: 594178574486397962}
+  - component: {fileID: 6886956794546998802}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -234,6 +222,8 @@ RectTransform:
   - {fileID: 980904783210991468}
   - {fileID: 8558772208365745239}
   - {fileID: 121483005359094067}
+  - {fileID: 6059703966515806057}
+  - {fileID: 2842164725335252530}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -304,6 +294,92 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6886956794546998802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870844610062083969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acbeec3b743f4ae429110409b8471762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiManager
+  m_timerText: {fileID: 5755404064820520377}
+  m_winStateMenu: {fileID: 8853370126521219776}
+  m_failStateMenu: {fileID: 8148879672426039867}
+  m_TextBox: {fileID: 4374662211328483849}
+--- !u!1 &8148879672426039867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2842164725335252530}
+  m_Layer: 5
+  m_Name: _LooseScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2842164725335252530
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148879672426039867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2788381720266004046}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &8853370126521219776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6059703966515806057}
+  m_Layer: 5
+  m_Name: _WinScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6059703966515806057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853370126521219776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2788381720266004046}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2358724547134739671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +482,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
   m_PrefabInstance: {fileID: 2358724547134739671}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5755404064820520377 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
+  m_PrefabInstance: {fileID: 2358724547134739671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &8850242078549646378
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
         transform.localRotation = Quaternion.Euler(lookAngle, /*mouseDelta.x * camSensitivity * Time.deltaTime*/0, 0);
         InputController.Instance.RotatePlayer(mouseDelta.x, camSensitivity);
 
-        //firstPersonController.transform.rotation *= Quaternion.Euler(0, mouseDeltaX * lookSensitivity* Time.deltaTime, 0);
+        //firstPersonController.tranform.rotation *= Quaternion.Euler(0, mouseDeltaX * lookSensitivity* Time.deltaTime, 0);
 
         //mouseDirection.x = mouseInput.x * Time.deltaTime * camSensitivityX;
         //mouseDirection.y = mouseInput.y * Time.deltaTime * camSensitivityY;
