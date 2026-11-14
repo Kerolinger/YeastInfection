@@ -5,8 +5,8 @@ public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private float camSensitivity;
 
-    [SerializeField] private float lookAngleLimitMin;
-    [SerializeField] private float lookAngleLimitMax;
+    [SerializeField] private float lookAngleLimitUp;
+    [SerializeField] private float lookAngleLimitDown;
 
     [SerializeField] private Transform playerOrientation;
 
@@ -31,7 +31,8 @@ public class CameraMovement : MonoBehaviour
         Vector2 mouseDelta = new Vector2(Mouse.current.delta.x.ReadValue(), Mouse.current.delta.y.ReadValue());
 
         lookAngle += -mouseDelta.y * camSensitivity * Time.deltaTime;
-        Mathf.Clamp(lookAngle, -45, 45);
+        lookAngle = Mathf.Clamp(lookAngle, lookAngleLimitUp, lookAngleLimitDown);
+        Debug.Log(lookAngle);
 
         transform.localRotation = Quaternion.Euler(lookAngle, 0, 0);
         InputController.Instance.RotatePlayer(mouseDelta.x, camSensitivity);
