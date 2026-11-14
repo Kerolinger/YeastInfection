@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayVoiceBit(VoiceBit voiceBit)
     {
-
+        uiManager.ActivateCaption(voiceBit);
+        AudioManager.instance.Play(voiceBit.VoicebitName);
     }
 }
