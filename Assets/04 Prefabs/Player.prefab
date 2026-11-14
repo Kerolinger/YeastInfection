@@ -372,11 +372,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7864100285697739205}
-  - component: {fileID: 2677638617936716086}
   - component: {fileID: 388258907669429975}
   - component: {fileID: 8782495534016977008}
-  - component: {fileID: 8903993087607361412}
-  - component: {fileID: 4909343259615069878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -402,33 +399,6 @@ Transform:
   - {fileID: 5438865867863766073}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2677638617936716086
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8499109300624862389}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 112
-  m_CollisionDetection: 1
 --- !u!114 &388258907669429975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,34 +414,6 @@ MonoBehaviour:
   firstPersonController: {fileID: 8782495534016977008}
   cameraMovement: {fileID: 324375452766455162}
 --- !u!114 &8782495534016977008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8499109300624862389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d5888236a72afe459499a86ecf1dbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonController
-  walkSpeed: 5.5
-  runningSpeed: 9
---- !u!114 &8903993087607361412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8499109300624862389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416965d5a01e5b1498e4c4774141c665, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputController
-  firstPersonController: {fileID: 4909343259615069878}
-  cameraMovement: {fileID: 0}
---- !u!114 &4909343259615069878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
