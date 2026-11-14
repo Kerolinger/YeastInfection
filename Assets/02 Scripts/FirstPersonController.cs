@@ -1,16 +1,29 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class FirstPersonController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float walkSpeed = 5.5f;
+    [SerializeField] private float runningSpeed = 9.0f;
 
-    // Update is called once per frame
-    void Update()
+    private Vector2 moveInput;
+    private Vector3 moveDirection;
+
+    private float currentMoveSpeed;
+
+    public Vector2 MoveInput { get => moveInput; set => moveInput = value; }
+
+    private void Start()
     {
-        
+        currentMoveSpeed = walkSpeed;
+    }
+    private void Update()
+    {
+        Vector3 moveDirection =
+            transform.forward * moveInput.y +
+            transform.right * moveInput.x;
+
+        transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
+
     }
 }

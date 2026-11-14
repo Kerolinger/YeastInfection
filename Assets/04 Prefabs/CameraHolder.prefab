@@ -150,10 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d6b3150200488498a1487b071cb608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  camSensitivityX: 400
-  camSensitivityY: 400
-  camXMinAngle: -90
-  camXMaxAngle: 90
+  camSensitivity: 0
+  lookAngleLimitMin: 0
+  lookAngleLimitMax: 0
   playerOrientation: {fileID: 0}
 --- !u!1 &4862469440254143175
 GameObject:
@@ -164,7 +163,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8399040002406141698}
-  - component: {fileID: 4749433915740251731}
   m_Layer: 0
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -188,16 +186,3 @@ Transform:
   - {fileID: 8194661604820838485}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4749433915740251731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4862469440254143175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652fdb8f6afc7b9428ad6587cf47ec64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ParentCameraToPlayer
-  cameraPosition: {fileID: 0}

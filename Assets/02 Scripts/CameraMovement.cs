@@ -1,21 +1,24 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
+    [SerializeField] private float camSensitivity;
 
-    [SerializeField] private float camSensitivityX;
-    [SerializeField] private float camSensitivityY;
-
-    [SerializeField] private float camXMinAngle;
-    [SerializeField] private float camXMaxAngle;
+    [SerializeField] private float lookAngleLimitMin;
+    [SerializeField] private float lookAngleLimitMax;
 
     [SerializeField] private Transform playerOrientation;
 
     private float xRotation;
     private float yRotation;
 
-    private float mouseX;
-    private float mouseY;
+    private Vector2 mouseInput;
+    private Vector2 mouseDirection;
+
+    float lookAngle;
+
+    public Vector2 MouseInput { get => mouseInput; set => mouseInput = value; }
 
     void Start()
     {
@@ -25,16 +28,24 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * camSensitivityX;
-        mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * camSensitivityY;
+        Vector2 mouseDelta = new Vector2(Mouse.current.delta.x.ReadValue(), Mouse.current.delta.y.ReadValue());
 
-        yRotation += mouseX;
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, camXMinAngle, camXMaxAngle);
+        lookAngle += -mouseDelta.y * camSensitivity * Time.deltaTime;
+        Mathf.Clamp(lookAngle, -45, 45);
 
-        //rotate cam and orientation
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        playerOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        transform.localRotation = Quaternion.Euler(lookAngle, 0, 0);
+        InputController.Instance.RotatePlayer(mouseDelta.x, camSensitivity);
+
+        //mouseDirection.x = mouseInput.x * Time.deltaTime * camSensitivityX;
+        //mouseDirection.y = mouseInput.y * Time.deltaTime * camSensitivityY;
+
+        //yRotation += mouseDirection.x;
+        //xRotation -= mouseDirection.y;
+        //xRotation = Mathf.Clamp(xRotation, camXMinAngle, camXMaxAngle);
+
+        ////rotate cam and orientation
+        //transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        //playerOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
     }
 }
