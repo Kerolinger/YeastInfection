@@ -24,6 +24,5 @@ public class FirstPersonController : MonoBehaviour
             transform.right * moveInput.x;
 
         transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
-
     }
 }
