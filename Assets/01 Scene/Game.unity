@@ -3846,7 +3846,7 @@ PrefabInstance:
       objectReference: {fileID: 1318781893}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: startVoiceBit.voicebitDuration
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: waitingTooLongVoiceBit01.voicebitName
@@ -3881,15 +3881,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: waitingTooLongVoiceBit01.voicebitDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: waitingTooLongVoiceBit02.voicebitDuration
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: waitingTooLongVoiceBit03.voicebitDuration
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7082731638485325531, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -104060,14 +104060,6 @@ PrefabInstance:
     - target: {fileID: 4870844610062083969, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
       propertyPath: m_Name
       value: HUD
-      objectReference: {fileID: 0}
-    - target: {fileID: 8148879672426039867, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853370126521219776, guid: 8eaff798f9c02e24e993d1bcac771252, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

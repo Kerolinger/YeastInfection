@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
@@ -40,6 +41,7 @@ public class UiManager : MonoBehaviour
         Cursor.visible = true;
         StopAllCoroutines();
         m_winStateMenu.SetActive(true);
+        m_TextBox.SetActive(false);
 
         GameManager.Instance.IsCameraInputDisabled = true;
         GameManager.Instance.IsMovementInputDisabled = true;
@@ -85,5 +87,16 @@ public class UiManager : MonoBehaviour
         remainingTime = 0;
         m_timerText.text = remainingTime.ToString();
         TriggerFailState();
+    }
+
+    public void BTN_RestartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+
+    public void BTN_MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

@@ -57,26 +57,26 @@ MonoBehaviour:
       you to complete the last step in your protocol.\r\n\r\nTurn off all four lights
       in the warehouse before you leave for the evening. Just flip the switches,
       and I\u2019ll track your progress.\r\n\r\n"
-    voicebitDuration: 13.5
+    voicebitDuration: 12
   waitingTooLongVoiceBit01:
     voicebitName: waitingTooLong_01
     voicebitText: 'The light switches are gray, usually on the walls. Do you want
       me to generate a reference photo?
 
 '
-    voicebitDuration: 6.5
+    voicebitDuration: 5
   waitingTooLongVoiceBit02:
     voicebitName: waitingTooLong_02
     voicebitText: 'Try checking behind boxes or shelves. Those switches can be tough
       to find!
 
 '
-    voicebitDuration: 4.5
+    voicebitDuration: 8
   waitingTooLongVoiceBit03:
     voicebitName: waitingTooLong_03
     voicebitText: "As soon as you find a switch, I\u2019ll make note of its location
       for next time. I\u2019m here to help!\r\n"
-    voicebitDuration: 5.5
+    voicebitDuration: 8
   lightSwitchVoiceBits:
   - voicebitName: light_01
     voicebitText: "Great job, only three more switches to flip!\r\nYou\u2019ve mentioned
