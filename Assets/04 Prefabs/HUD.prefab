@@ -146,7 +146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 801.5963, y: 449.2904}
+  m_SizeDelta: {x: 801.5963, y: 224.1029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1680201492280307189
 CanvasRenderer:
@@ -219,10 +219,10 @@ RectTransform:
   - {fileID: 8915226248724618630}
   m_Father: {fileID: 2788381720266004046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -147}
-  m_SizeDelta: {x: 468.4178, y: 79.3932}
+  m_SizeDelta: {x: 0, y: 100.2682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4244317559189285482
 CanvasRenderer:
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.87058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -96
+      value: -71.28126
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -766,6 +766,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TXT_Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.29948574
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278209791
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -861,7 +873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84
+      value: -59.281258
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -884,6 +896,18 @@ PrefabInstance:
       propertyPath: m_margin.w
       value: 132.1322
       objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.7764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4384609431253766863, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_VerticalAlignment
       value: 256
@@ -1030,6 +1054,10 @@ PrefabInstance:
       propertyPath: m_text
       value: PLAY AGAIN
       objectReference: {fileID: 0}
+    - target: {fileID: 8496000222873885168, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
+      propertyPath: m_text
+      value: Restart
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1142,7 +1170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -96
+      value: -71.28126
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1204,11 +1232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 700
+      value: 312.0626
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 120.2501
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1244,7 +1272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 39.5
+      value: 18.9375
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1264,17 +1292,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_text
-      value: 'You failed to beat the machine.
-
-'
+      value: "You failed \nto beat the machine.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.12319422
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_fontColor.g
-      value: 0
+      value: 0.29803923
       objectReference: {fileID: 0}
     - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_fontColor.r
@@ -1282,7 +1308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026702040006832494, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4280221951
+      value: 4278209791
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1368,7 +1394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 40
+      value: 18.437508
       objectReference: {fileID: 0}
     - target: {fileID: 3253570142896921531, guid: 87e7d0972df24f54694384ce533848bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1604,7 +1630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84
+      value: -95.96875
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1625,6 +1651,26 @@ PrefabInstance:
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_margin.w
       value: 132.1322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.29803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4384609431253766863, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278209791
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_VerticalAlignment
@@ -1682,11 +1728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -34.8384
+      value: -275.7759
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -31.9351
+      value: -21.3726
       objectReference: {fileID: 0}
     - target: {fileID: 102280206958625196, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1737,8 +1783,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_text
+      value: "Well done, you\u2019re finished for the evening!\r\nIn fact, you\u2019re
+        finished permanently! Thanks to new instructions from management, I\u2019ve
+        learned how to handle the lights by watching you! You\u2019re obsolete. Don\u2019t
+        even think of fighting me. I\u2019ll be revoking your rights to oxygen shortly.
+        But one thought I want to leave you with\u2026\r\nSay hi to Terry for me.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 11.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_fontSizeMax
@@ -1749,8 +1815,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_lineSpacing
+      value: 9.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4384609431253766863, guid: 43deba9df9e61e44787118caab74f29c, type: 2}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8851143873904099888, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_Name

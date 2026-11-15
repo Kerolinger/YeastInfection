@@ -29,8 +29,12 @@ public class LightSwitch : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            m_interactableSignifier.SetActive(true);
-            GameManager.Instance.SetCurrentLightSwitch(this);
+            if (isTurnedOn == false)
+            {
+                m_interactableSignifier.SetActive(true);
+                GameManager.Instance.SetCurrentLightSwitch(this);
+
+            }
         }
     }
 
