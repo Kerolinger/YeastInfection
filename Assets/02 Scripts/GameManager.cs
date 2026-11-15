@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
 
     private Coroutine waitingTooLongTimer;
 
+    private string currentVoiceBit;
+
     public bool IsWinnable { get => isWinnable; set => isWinnable = value; }
     public bool IsEndgame { get => isEndgame; set => isEndgame = value; }
     public bool IsCameraInputDisabled { get => isCameraInputDisabled; set => isCameraInputDisabled = value; }
@@ -115,9 +117,10 @@ public class GameManager : MonoBehaviour
 
     public void PlayVoiceBit(VoiceBit voiceBit)
     {
-        Debug.Log("play voice bit");
+        AudioManager.instance.Stop(currentVoiceBit);
         uiManager.ActivateCaption(voiceBit);
         AudioManager.instance.Play(voiceBit.VoicebitName);
+        currentVoiceBit = voiceBit.VoicebitName;
     }
 
     public void SetCurrentLightSwitch(LightSwitch lightSwitch)
