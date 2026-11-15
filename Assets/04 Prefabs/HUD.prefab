@@ -538,7 +538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6059703966515806057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -686,6 +686,10 @@ PrefabInstance:
     - target: {fileID: 8204434730950713640, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_text
       value: PLAY AGAIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496000222873885168, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
+      propertyPath: m_text
+      value: PLAY again
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
