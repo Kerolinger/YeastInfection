@@ -640,8 +640,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_text
-      value: "MASCHA - \n3D ART\n\nPOLINA - \nLEVEL DESIGN, NARRATIVE DESIGN\n\nALLI
-        - \nNARRATIVE DESIGN, VOICE ACTING\n\nCARO - \nPROGRAMMING, \nSOUND DESIGN"
+      value: "MASCHA - \n3D ART\n\nPOLINA - \nLEVEL DESIGN\n\nALLIE - \nNARRATIVE
+        DESIGN, VOICE ACTING\n\nCARO - \nPROGRAMMING, \nSOUND DESIGN"
       objectReference: {fileID: 0}
     - target: {fileID: 3715975645301400598, guid: 472d8b8f7e97ea147bd3f22c00d64f5e, type: 3}
       propertyPath: m_fontAsset
@@ -1893,7 +1893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1909,7 +1909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -420
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1945,7 +1945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -184.31247
+      value: 40.68753
       objectReference: {fileID: 0}
     - target: {fileID: 1724656368562614969, guid: ae88ec206121b7243a10b01d386b2aab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
