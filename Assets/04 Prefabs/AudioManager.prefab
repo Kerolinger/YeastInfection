@@ -46,49 +46,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
   - name: light_01
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1974eeff74f3cd74bbb2f9a78e72e2dc, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: light_02
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 853d59b2e40f9ba43a0c662454621f84, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: light_03
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 42bd0de42d132ad4987be79f0551b600, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: light_04
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: a7b72b0b79ed4af4d8d8b7cdce5adee1, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: checkpoint_01
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: d9ff173296d633d41a7e83d1e30ebb97, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: checkpoint_02
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 84fb78b85cf76a04d8181d857369abb7, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: checkpoint_03
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 43d4a43212566c84a8e2aa7a2ebaad87, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: checkpoint_04
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: dda559526bdb64c499fbf9dc6af58cc3, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -106,25 +106,25 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: waitingTooLong_01
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: fb47346c74a969c47a0c779b90870d4e, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: waitingTooLong_02
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: cd6e3a989c77fe0458d3efb9f93cecd5, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: waitingTooLong_03
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4b21025b17e453846beed9d248b05027, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: startGame
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4ff839e0ad294a74c9745a844c761bf3, type: 3}
     volume: 1
     pitch: 1
     loop: 0
