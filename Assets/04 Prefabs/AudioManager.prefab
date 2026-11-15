@@ -131,7 +131,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: footsteps
     clip: {fileID: 8300000, guid: 4bc6611bec23c834e9d941b954cfd8c4, type: 3}
-    volume: 0.6
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: timer
     clip: {fileID: 8300000, guid: 6f4ac4929ad4d1b468ea70ea6975f0ad, type: 3}
-    volume: 0.1
+    volume: 0.05
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -161,13 +161,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ambience
     clip: {fileID: 8300000, guid: d214e153824803546af9dcf1ee1ee1c0, type: 3}
-    volume: 0.5
+    volume: 0.6
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: ambience_02
     clip: {fileID: 8300000, guid: 65757f8a5ba6f5f4ca03086805d8e730, type: 3}
-    volume: 0.05
+    volume: 0.1
     pitch: 0.5
     loop: 1
     source: {fileID: 0}
