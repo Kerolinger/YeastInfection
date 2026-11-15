@@ -12,6 +12,7 @@ public class FirstPersonController : MonoBehaviour
 
     private float currentMoveSpeed;
     private Rigidbody rb;
+    private Animator animator;
 
     public Vector2 MoveInput { get => moveInput; set => moveInput = value; }
 
@@ -19,6 +20,7 @@ public class FirstPersonController : MonoBehaviour
     {
         currentMoveSpeed = walkSpeed;
         rb = GetComponentInChildren<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
     }
     private void Update()
     {
@@ -30,6 +32,11 @@ public class FirstPersonController : MonoBehaviour
             rb.transform.right * moveInput.x;
 
         rb.transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
+
+        if (moveDirection == Vector3.zero)
+            animator.SetBool("IsWalking", false);
+        else
+            animator.SetBool("IsWalking", true);
     }
     public void Interact()
     {
