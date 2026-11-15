@@ -81,29 +81,30 @@ MonoBehaviour:
     voicebitDuration: 5
   lightSwitchVoiceBits:
   - voicebitName: light_01
-    voicebitText: "Great job, only<color=#FFCC00> three more switches </color> to
+    voicebitText: "Great job, only <color=#FFCC00>three more switches</color> to
       flip!\r\nYou\u2019ve mentioned the recent layoffs have been hard on you. But
       your colleagues are in a better place now. What\u2019s more, the company is
       thriving with less financial burden. It\u2019s important to set grief aside,
-      and focus on the positives, like your passion for flipping light switches."
+      and <color=#FFCC00>focus on the positives</color>, like your passion for flipping
+      light switches."
     voicebitDuration: 20
   - voicebitName: light_02
-    voicebitText: "You\u2019re halfway there. <color=#FFCC00> Only two to go! </color>\r\nYou
+    voicebitText: "You\u2019re halfway there. <color=#FFCC00>Only two to go!</color>\r\nYou
       always work so tirelessly. Don\u2019t forget to be kind to yourself in these
       troubling times. And if you need to talk\u2026 BetterHelp offers online mental
-      health assistance, only a phone call away! Use the code 25SAD to get a discount
-      on your first session today, courtesy of Your Company."
+      health assistance, only a phone call away! <color=#FFCC00>Use the code 25SAD</color>
+      to get a discount on your first session today, courtesy of Your Company."
     voicebitDuration: 22.5
   - voicebitName: light_03
-    voicebitText: "Only <color=#FFCC00> one switch left </color>! I could learn so
+    voicebitText: "Only <color=#FFCC00>one switch left </color>! I could learn so
       much from your performance here.\r\nIt takes strength to keep working as flawlessly
       as you do. I know you miss Terry, but he\u2019d be proud to see his protege
       picking up so much work. Wherever he is now, I\u2019m sure he\u2019s smiling
       down at you."
     voicebitDuration: 18.5
   - voicebitName: light_04
-    voicebitText: "Well done, you\u2019re finished for the evening!\r\nIn fact, you\u2019re
-      finished permanently! Thanks to new instructions from management, I\u2019ve
+    voicebitText: "Well done, you\u2019re finished for the evening!\r\nIn fact, <color=#FFCC00>you\u2019re
+      finished permanently!</color> Thanks to new instructions from management, I\u2019ve
       learned how to handle the lights by watching you! You\u2019re obsolete. Don\u2019t
       even think of fighting me. I\u2019ll be revoking your rights to oxygen shortly.
       But one thought I want to leave you with\u2026\r\nSay hi to Terry for me."
