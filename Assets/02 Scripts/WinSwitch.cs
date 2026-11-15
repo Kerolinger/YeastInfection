@@ -37,6 +37,8 @@ public class WinSwitch : MonoBehaviour
     {
         m_switchOn.SetActive(true);
         m_switchOff.SetActive(false);
+
+        m_interactableSignifier.SetActive(false);
     }
 
 }
