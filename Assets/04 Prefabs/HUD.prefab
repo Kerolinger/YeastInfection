@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 8558772208365745239}
   - component: {fileID: 4244317559189285482}
   - component: {fileID: 7892289176084486235}
+  - component: {fileID: 4896259800249524701}
   m_Layer: 5
   m_Name: IMG_VoiceCaptionBackdrop
   m_TagString: Untagged
@@ -262,6 +263,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &4896259800249524701
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4374662211328483849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 900333a2da3302f4eaaf1bec599537c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4870844610062083969
 GameObject:
   m_ObjectHideFlags: 0

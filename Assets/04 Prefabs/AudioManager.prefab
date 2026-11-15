@@ -131,7 +131,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: footsteps
     clip: {fileID: 8300000, guid: 4bc6611bec23c834e9d941b954cfd8c4, type: 3}
-    volume: 1
+    volume: 0.6
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -143,7 +143,61 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: timer
     clip: {fileID: 8300000, guid: 6f4ac4929ad4d1b468ea70ea6975f0ad, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: btn_click
+    clip: {fileID: 8300000, guid: 024559383d228aa4399eb0d1199dd983, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: redPhase
+    clip: {fileID: 8300000, guid: 91690cc92789a0947966d20a1faadad5, type: 3}
+    volume: 0.01
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ambience
+    clip: {fileID: 8300000, guid: d214e153824803546af9dcf1ee1ee1c0, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ambience_02
+    clip: {fileID: 8300000, guid: 65757f8a5ba6f5f4ca03086805d8e730, type: 3}
+    volume: 0.05
+    pitch: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: text popup_nice
+    clip: {fileID: 8300000, guid: 3578d4faa2b439a4bae6def2dd5cafb4, type: 3}
+    volume: 0.2
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: text popup_evil
+    clip: {fileID: 8300000, guid: ef203ea1d31531046bc3edd6c5b582c1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: textpopdown
+    clip: {fileID: 8300000, guid: cdecaf5f7bd540442bc68337e916f5a4, type: 3}
+    volume: 0.1
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: intro sound
+    clip: {fileID: 8300000, guid: 2db36996b53285f49b9ffc5b78ecb849, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: intro sound_02
+    clip: {fileID: 8300000, guid: f295b3bedef3546419a7a4d5f50e5250, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
     source: {fileID: 0}

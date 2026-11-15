@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(StartGame());
         checkPoints.SetActive(false);
+        AudioManager.instance.Play("ambience");
+        AudioManager.instance.Play("ambience_02");
     }
 
     private IEnumerator StartGame()
@@ -68,7 +70,11 @@ public class GameManager : MonoBehaviour
         IsCameraInputDisabled = false;
 
         yield return new WaitForSeconds(0.5f);
+        AudioManager.instance.Play("intro sound");
+        AudioManager.instance.Play("intro sound_02");
+        yield return new WaitForSeconds(0.2f);
         PlayVoiceBit(startVoiceBit);
+        AudioManager.instance.Stop("text popup_nice");
         yield return new WaitForSeconds(startVoiceBit.VoicebitDuration);
 
         IsMovementInputDisabled = false;
@@ -95,19 +101,25 @@ public class GameManager : MonoBehaviour
 
         if (turnedOnSwitches.Count == lightSwitches.Length)
         {
-            TriggerEndGame();
+            StartCoroutine(TriggerEndGame());
         }
 
         PlayVoiceBit(lightSwitchVoiceBits[turnedOnSwitches.Count -1]);
         ResetCurrentLightSwitch();
     }
 
-    private void TriggerEndGame()
+    private IEnumerator TriggerEndGame()
     {
+        IsMovementInputDisabled = true;
+        yield return new WaitForSeconds(2f);
         isEndgame = true;
-        uiManager.StartTimer(endTimerDuration);
         checkPoints.SetActive(true);
         IdlePC.SetActive(false);
+        yield return new WaitForSeconds(1f);
+
+        IsMovementInputDisabled = false;
+        uiManager.StartTimer(endTimerDuration);
+        AudioManager.instance.Play("redPhase");
 
         foreach (LightSwitch s in lightSwitches)
         {
@@ -115,12 +127,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PlayVoiceBit(VoiceBit voiceBit)
+    public void PlayVoiceBit(VoiceBit voiceBit, bool isNice = true)
     {
         AudioManager.instance.Stop(currentVoiceBit);
         uiManager.ActivateCaption(voiceBit);
         AudioManager.instance.Play(voiceBit.VoicebitName);
         currentVoiceBit = voiceBit.VoicebitName;
+
+        if(isNice)
+            AudioManager.instance.Play("text popup_nice");
+        else
+            AudioManager.instance.Play("text popup_evil");
     }
 
     public void SetCurrentLightSwitch(LightSwitch lightSwitch)

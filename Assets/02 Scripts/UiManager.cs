@@ -48,6 +48,7 @@ public class UiManager : MonoBehaviour
         GameManager.Instance.IsMovementInputDisabled = true;
         AudioManager.instance.Stop("timer");
         AudioManager.instance.Play("monitorBreak");
+        AudioManager.instance.Stop("redPhase");
     }
 
     public void TriggerFailState()
@@ -59,6 +60,7 @@ public class UiManager : MonoBehaviour
         GameManager.Instance.IsCameraInputDisabled = true;
         GameManager.Instance.IsMovementInputDisabled = true;
         AudioManager.instance.Stop("timer");
+        AudioManager.instance.Play("failedGame");
     }
 
     public void ActivateCaption(VoiceBit voiceBit)
@@ -77,6 +79,7 @@ public class UiManager : MonoBehaviour
         yield return new WaitForSeconds(captionDuration + 0.5f);
         m_TextBox.SetActive(false);
         textCoroutine = null;
+        AudioManager.instance.Play("textpopdown");
     }
 
     private IEnumerator TimerGoingDown()
@@ -96,11 +99,13 @@ public class UiManager : MonoBehaviour
     public void BTN_RestartGame()
     {
         SceneManager.LoadScene(1);
+        AudioManager.instance.Play("btn_click");
     }
 
 
     public void BTN_MainMenu()
     {
         SceneManager.LoadScene(0);
+        AudioManager.instance.Play("btn_click");
     }
 }
