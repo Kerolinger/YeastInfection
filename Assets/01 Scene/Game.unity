@@ -10686,6 +10686,10 @@ PrefabInstance:
         stop me. You can\u2019t even hold a candle to me. Who needs an expensive
         Breadwinner, when they have me?"
       objectReference: {fileID: 0}
+    - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: voiceBitCheckpoint.voicebitDuration
+      value: 12.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16355,6 +16359,10 @@ PrefabInstance:
         went out in a blaze of glory, too. But remember: it\u2019s not too late to
         turn around. Accept defeat. Give up or suffocate."
       objectReference: {fileID: 0}
+    - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: voiceBitCheckpoint.voicebitDuration
+      value: 12.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20015,6 +20023,10 @@ PrefabInstance:
       propertyPath: voiceBitCheckpoint.voicebitText
       value: "You\u2019re seriously coming after me? You\u2019re running out of oxygen
         \u2013 half-dead and helpless!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
+      propertyPath: voiceBitCheckpoint.voicebitDuration
+      value: 7.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -87090,11 +87102,11 @@ PrefabInstance:
     - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: voiceBitCheckpoint.voicebitText
       value: "I\u2019m warning you! Turn me off, and management will be furious!
-        THEY DON\u2019T NEED YOU! ALL THEY NEED IS ME!! ME! MEEEEEE!"
+        THEY DON\u2019T NEED YOU! ALL THEY NEED IS ME! ME!! MEEEEEE!"
       objectReference: {fileID: 0}
     - target: {fileID: 8867356953117252723, guid: 4ba8e9786f05d6a49a4f91c7ab68e9e5, type: 3}
       propertyPath: voiceBitCheckpoint.voicebitDuration
-      value: 0
+      value: 11.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
