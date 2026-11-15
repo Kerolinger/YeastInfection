@@ -33,4 +33,10 @@ public class WinSwitch : MonoBehaviour
         }
     }
 
+    public void ChangeScreen()
+    {
+        m_switchOn.SetActive(true);
+        m_switchOff.SetActive(false);
+    }
+
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] UiManager uiManager;
     [SerializeField] GameObject checkPoints;
     [SerializeField] GameObject IdlePC;
+    [SerializeField] GameObject WinSwitch;
 
 
     [Header("Voice Bits")]
@@ -147,6 +148,9 @@ public class GameManager : MonoBehaviour
         if (isWinnable)
         {
             uiManager.TriggerWinState();
+            WinSwitch winSwitch = FindObjectOfType<WinSwitch>();
+
+            winSwitch.ChangeScreen();
         }
         else
             return;
