@@ -94,13 +94,13 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: interact_success
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 5f03893a30e05eb4d8becab0ea2ac9ac, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: interact_fail
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 7baf0fb23cc5c3c40b89e640cea30c23, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -128,4 +128,22 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: footsteps
+    clip: {fileID: 8300000, guid: 4bc6611bec23c834e9d941b954cfd8c4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: monitorBreak
+    clip: {fileID: 8300000, guid: 2b5e79bed14b9fb498586b530cd0b0a6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: timer
+    clip: {fileID: 8300000, guid: 6f4ac4929ad4d1b468ea70ea6975f0ad, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
