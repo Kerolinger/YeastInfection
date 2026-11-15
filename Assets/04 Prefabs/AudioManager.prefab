@@ -133,7 +133,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4bc6611bec23c834e9d941b954cfd8c4, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: monitorBreak
     clip: {fileID: 8300000, guid: 2b5e79bed14b9fb498586b530cd0b0a6, type: 3}
