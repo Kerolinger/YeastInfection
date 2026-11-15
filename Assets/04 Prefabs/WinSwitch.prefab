@@ -658,8 +658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WinSwitch
   m_interactableSignifier: {fileID: 2927721323546544956}
-  m_switchOn: {fileID: 2008382807738395724}
-  m_switchOff: {fileID: 4852527120951658278}
+  m_switchOn: {fileID: 4852527120951658278}
+  m_switchOff: {fileID: 2008382807738395724}
 --- !u!136 &5343744035145724686
 CapsuleCollider:
   m_ObjectHideFlags: 0
