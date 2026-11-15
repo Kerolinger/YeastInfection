@@ -71,12 +71,12 @@ MonoBehaviour:
       to find!
 
 '
-    voicebitDuration: 8
+    voicebitDuration: 5
   waitingTooLongVoiceBit03:
     voicebitName: waitingTooLong_03
     voicebitText: "As soon as you find a switch, I\u2019ll make note of its location
       for next time. I\u2019m here to help!\r\n"
-    voicebitDuration: 8
+    voicebitDuration: 5
   lightSwitchVoiceBits:
   - voicebitName: light_01
     voicebitText: "Great job, only three more switches to flip!\r\nYou\u2019ve mentioned

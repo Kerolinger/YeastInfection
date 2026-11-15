@@ -783,17 +783,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 230023969}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: startVoiceBit.voicebitName
-      value: startGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: startVoiceBit.voicebitText
-      value: "Your shift\u2019s almost over, Breadwinner! You asked me to remind
-        you to complete the last step in your protocol.\r\n\r\nTurn off all four
-        lights in the warehouse before you leave for the evening. Just flip the switches,
-        and I\u2019ll track your progress.\r\n\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: 'lightSwitches.Array.data[0]'
       value: 
       objectReference: {fileID: 276815302}
@@ -810,51 +799,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1318781893}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: startVoiceBit.voicebitDuration
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit01.voicebitName
-      value: waitingTooLong_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit01.voicebitText
-      value: 'The light switches are gray, usually on the walls. Do you want me to
-        generate a reference photo?
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit02.voicebitName
-      value: waitingTooLong_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit02.voicebitText
-      value: 'Try checking behind boxes or shelves. Those switches can be tough to
-        find!
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit03.voicebitName
-      value: waitingTooLong_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit03.voicebitText
-      value: "As soon as you find a switch, I\u2019ll make note of its location for
-        next time. I\u2019m here to help!\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit01.voicebitDuration
+      propertyPath: waitingTooLongVoiceBit02.voicebitDuration
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
-      propertyPath: waitingTooLongVoiceBit02.voicebitDuration
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5695657209909453994, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: waitingTooLongVoiceBit03.voicebitDuration
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7082731638485325531, guid: cc8af863cee34f74d850dcf87cc74af2, type: 3}
       propertyPath: m_LocalPosition.x
