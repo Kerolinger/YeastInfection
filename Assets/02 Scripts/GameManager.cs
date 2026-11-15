@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject checkPoints;
     [SerializeField] GameObject IdlePC;
     [SerializeField] GameObject WinSwitch;
+    [SerializeField] GameObject volumeEnd;
 
 
     [Header("Voice Bits")]
@@ -108,6 +109,7 @@ public class GameManager : MonoBehaviour
         uiManager.StartTimer(endTimerDuration);
         checkPoints.SetActive(true);
         IdlePC.SetActive(false);
+        volumeEnd.SetActive(true);
 
         foreach (LightSwitch s in lightSwitches)
         {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8041251699660866052}
   - component: {fileID: 231999696335756686}
   - component: {fileID: 953642264875449815}
+  - component: {fileID: 5459058002666808623}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -127,6 +128,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!111 &5459058002666808623
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920034422490078188}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &6114125417044167272
 GameObject:
   m_ObjectHideFlags: 0
