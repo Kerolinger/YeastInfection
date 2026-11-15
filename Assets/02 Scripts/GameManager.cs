@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] LightSwitch[] lightSwitches;
     [SerializeField] UiManager uiManager;
     [SerializeField] GameObject checkPoints;
+    [SerializeField] GameObject IdlePC;
+
 
     [Header("Voice Bits")]
     [SerializeField] VoiceBit startVoiceBit;
@@ -102,6 +104,7 @@ public class GameManager : MonoBehaviour
         isEndgame = true;
         uiManager.StartTimer(endTimerDuration);
         checkPoints.SetActive(true);
+        IdlePC.SetActive(false);
 
         foreach (LightSwitch s in lightSwitches)
         {
