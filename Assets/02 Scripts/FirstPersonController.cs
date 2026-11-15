@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 moveDirection;
 
     private float currentMoveSpeed;
+    private Rigidbody rb;
 
     public Vector2 MoveInput { get => moveInput; set => moveInput = value; }
 
     private void Start()
     {
         currentMoveSpeed = walkSpeed;
+        rb = GetComponentInChildren<Rigidbody>();
     }
     private void Update()
     {
@@ -23,10 +26,10 @@ public class FirstPersonController : MonoBehaviour
             return;
 
         Vector3 moveDirection =
-            transform.forward * moveInput.y +
-            transform.right * moveInput.x;
+            rb.transform.forward * moveInput.y +
+            rb.transform.right * moveInput.x;
 
-        transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
+        rb.transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
     }
     public void Interact()
     {

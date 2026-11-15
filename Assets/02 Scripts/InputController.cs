@@ -42,13 +42,13 @@ public class InputController : MonoBehaviour
     void Update()
     {
         firstPersonController.MoveInput = moveInput.ReadValue<Vector2>();
-        rb.transform.localPosition = Vector3.zero;
+        //rb.transform.localPosition = Vector3.zero;
     }
 
 
     public void RotatePlayer(float mouseDeltaX, float lookSensitivity)
     {
-        firstPersonController.transform.rotation *= Quaternion.Euler(0, mouseDeltaX * lookSensitivity* Time.deltaTime, 0);
+        rb.transform.rotation *= Quaternion.Euler(0, mouseDeltaX * lookSensitivity* Time.deltaTime, 0);
     }
 
 }
