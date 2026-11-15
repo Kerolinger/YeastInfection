@@ -33,7 +33,9 @@ public class FirstPersonController : MonoBehaviour
 
         rb.transform.position += moveDirection * currentMoveSpeed * Time.deltaTime;
 
-        if (moveDirection == Vector3.zero)
+        Debug.Log("moveInput:"+ moveInput);
+
+        if (moveInput == Vector2.zero)
             animator.SetBool("IsWalking", false);
         else
             animator.SetBool("IsWalking", true);

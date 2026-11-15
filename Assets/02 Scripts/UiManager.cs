@@ -33,6 +33,7 @@ public class UiManager : MonoBehaviour
         remainingTime = timeDuration;
 
         StartCoroutine(TimerGoingDown());
+        AudioManager.instance.Play("timer");
     }
 
     public void TriggerWinState()
@@ -45,6 +46,8 @@ public class UiManager : MonoBehaviour
 
         GameManager.Instance.IsCameraInputDisabled = true;
         GameManager.Instance.IsMovementInputDisabled = true;
+        AudioManager.instance.Stop("timer");
+        AudioManager.instance.Play("monitorBreak");
     }
 
     public void TriggerFailState()
@@ -55,6 +58,7 @@ public class UiManager : MonoBehaviour
 
         GameManager.Instance.IsCameraInputDisabled = true;
         GameManager.Instance.IsMovementInputDisabled = true;
+        AudioManager.instance.Stop("timer");
     }
 
     public void ActivateCaption(VoiceBit voiceBit)
